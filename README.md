@@ -1,0 +1,2 @@
+# miniprojecct
+shop list project

@@ -1,7 +1,7 @@
 :root{
-  --teal: #1f6f6b;
-  --teal-dark: #16524f;
-  --cream: #faf6ee;
+  --orange: #e87521;
+  --orange-dark: #bd5714;
+  --white: #ffffff;
   --paper: #fffdf8;
   --line: #e4dcc8;
   --ink: #2b2b28;
@@ -15,10 +15,7 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: var(--cream);
-  background-image:
-    linear-gradient(var(--line) 1px, transparent 1px);
-  background-size: 100% 2.1em;
+  background: var(--white);
   font-family: 'Georgia', 'Iowan Old Style', serif;
   color: var(--ink);
   display: flex;
@@ -38,7 +35,7 @@ header {
 
 header .tag {
   display: inline-block;
-  background: var(--teal);
+  background: var(--orange);
   color: #fff;
   font-family: 'Trebuchet MS', sans-serif;
   font-size: 0.7rem;
@@ -52,14 +49,14 @@ header .tag {
 header h1 {
   margin: 0;
   font-size: 2.1rem;
-  color: var(--teal-dark);
+  color: var(--orange-dark);
 }
 
 .sheet {
   background: var(--paper);
   border: 1px solid var(--line);
   border-radius: 14px;
-  box-shadow: 0 10px 30px rgba(31, 111, 107, 0.08);
+  box-shadow: 0 10px 30px rgba(232, 117, 33, 0.08);
   padding: 22px;
 }
 
@@ -85,14 +82,14 @@ header h1 {
 }
 
 .add-form input:focus {
-  border-color: var(--teal);
+  border-color: var(--orange);
 }
 
 .add-form button {
   font-family: 'Trebuchet MS', sans-serif;
   font-weight: bold;
   font-size: 1.3rem;
-  background: var(--teal);
+  background: var(--orange);
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -101,7 +98,7 @@ header h1 {
   transition: background 0.15s ease;
 }
 
-.add-form button:hover { background: var(--teal-dark); }
+.add-form button:hover { background: var(--orange-dark); }
 
 /* Search + stats row */
 .toolbar {
@@ -122,14 +119,14 @@ header h1 {
   outline: none;
 }
 
-.toolbar input[type="text"]:focus { border-color: var(--teal); }
+.toolbar input[type="text"]:focus { border-color: var(--orange); }
 
 .count-pill {
   font-family: 'Trebuchet MS', sans-serif;
   font-size: 0.78rem;
-  color: var(--teal-dark);
-  background: #eaf3f1;
-  border: 1px solid #d3e6e2;
+  color: var(--orange-dark);
+  background: #fff1e6;
+  border: 1px solid #f4c8a5;
   padding: 6px 12px;
   border-radius: 999px;
   white-space: nowrap;
@@ -156,7 +153,7 @@ li.item:last-child { border-bottom: none; }
   width: 22px;
   height: 22px;
   flex-shrink: 0;
-  border: 2px solid var(--teal);
+  border: 2px solid var(--orange);
   border-radius: 6px;
   cursor: pointer;
   display: flex;
@@ -167,7 +164,7 @@ li.item:last-child { border-bottom: none; }
 }
 
 .check.checked {
-  background: var(--teal);
+  background: var(--orange);
 }
 
 .check svg { display: none; width: 13px; height: 13px; }
@@ -193,8 +190,8 @@ li.item.done .item-name {
 .qty {
   font-family: 'Trebuchet MS', sans-serif;
   font-size: 0.78rem;
-  color: var(--teal-dark);
-  background: #eaf3f1;
+  color: var(--orange-dark);
+  background: #fff1e6;
   border-radius: 999px;
   padding: 3px 10px;
   flex-shrink: 0;

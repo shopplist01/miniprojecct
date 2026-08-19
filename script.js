@@ -36,7 +36,7 @@ function render() {
       </div>
       <span class="item-name" contenteditable="true" spellcheck="false">${escapeHtml(item.name)}</span>
       <span class="qty">x${item.qty}</span>
-      <button class="icon-btn" title="Delete item">🗑</button>
+      <button class="icon-btn" title="Delete item">Delete</button>
     `;
 
     // Toggle purchased

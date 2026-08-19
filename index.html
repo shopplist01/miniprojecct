@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Shopping List</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="board">
+  <header>
+    <span class="tag">Before you go to the market</span>
+    <h1>🛒 My Shopping List</h1>
+  </header>
+
+  <div class="sheet">
+
+    <form class="add-form" id="addForm">
+      <input type="text" id="itemInput" placeholder="Add an item… e.g. Tomatoes" required>
+      <input type="number" id="qtyInput" placeholder="Qty" min="1" value="1" required>
+      <button type="submit" title="Add item">+</button>
+    </form>
+
+    <div class="toolbar">
+      <input type="text" id="searchInput" placeholder="🔍 Search your list…">
+      <span class="count-pill" id="countPill">0 items</span>
+    </div>
+
+    <ul id="list"></ul>
+    <p class="empty" id="emptyMsg">Your list is empty. Add something above 🍅</p>
+
+  </div>
+
+  <footer>Saved automatically on this device · tap an item's text to edit it</footer>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
